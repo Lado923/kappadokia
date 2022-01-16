@@ -10,8 +10,8 @@ body {
 
 @font-face {
     font-family: 'balqis';
-    src: url('/assets/fonts/BalqisCyrillic-Script.woff2') format('woff2');
-    src: url('/assets/fonts/BalqisCyrillic-Script.woff') format('woff');
+    src: url('assets/fonts/BalqisCyrillic-Script.woff2') format('woff2');
+    src: url('assets/fonts/BalqisCyrillic-Script.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -20,9 +20,9 @@ body {
 
 @font-face {
     font-family: 'RobotoCondensed-Regular';
-    src: url('/assets/fonts/RobotoCondensed-Regular.woff2') format('woff2');
-    src: url('/assets/fonts/RobotoCondensed-Regular.woff') format('woff');
-    font-weight: 300;
+    src: url('assets/fonts/RobotoCondensed-Regular.woff2') format('woff2');
+    src: url('assets/fonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 
@@ -30,8 +30,8 @@ body {
 
 @font-face {
     font-family: 'RobotoCondensed-LightItalic';
-    src: url('/assets/fonts/RobotoCondensed-LightItalic.woff2') format('woff2');
-    src: url('/assets/fonts/RobotoCondensed-LightItalic.woff') format('woff');
+    src: url('assets/fonts/RobotoCondensed-LightItalic.woff2') format('woff2');
+    src: url('assets/fonts/RobotoCondensed-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -40,8 +40,8 @@ body {
 
 @font-face {
     font-family: 'RobotoCondensed-Light';
-    src: url('/assets/fonts/RobotoCondensed-Light.woff2') format('woff2');
-    src: url('/assets/fonts/RobotoCondensed-Light.woff') format('woff');
+    src: url('assets/fonts/RobotoCondensed-Light.woff2') format('woff2');
+    src: url('assets/fonts/RobotoCondensed-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -77,6 +77,7 @@ body{
 .header__top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 72px;
     font-size: 24px;
     line-height: 28px;
@@ -96,3 +97,35 @@ body{
 text-decoration: underline;
 }
 
+.header__phone{
+    padding-left: 40px;
+    position: relative;
+}
+
+.header__phone::before{
+    content: "";
+    position: absolute;
+    background-image: url(assets/img/phone\ 1.svg);
+    width: 30px;
+    height: 30px;
+    left:0;
+}
+
+.header__title{
+    padding-top: 152px;
+    text-align: center;
+    font-size: 250px;
+    line-height: 334px;
+    font-family: 'balqis';
+    font-weight: 300;
+}
+
+.header__title span{
+    display: block;
+    text-align: right;
+    font-size: 56px;
+    line-height: 66px;
+    font-family: 'RobotoCondensed-LightItalic';
+    margin-top: -66px;
+    margin-right: 80px;
+}
