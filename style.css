@@ -68,7 +68,7 @@ body{
 
 .header {
     background-image: url('assets/img/header-bg.jpg');
-    height: 100vh;
+    height: 1080px;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -118,6 +118,7 @@ text-decoration: underline;
     line-height: 334px;
     font-family: 'balqis';
     font-weight: 300;
+    margin:0 auto
 }
 
 .header__title span{
