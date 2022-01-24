@@ -153,7 +153,18 @@ text-decoration: underline;
     margin-top: -66px;
     margin-right: 80px;
 }
+.fairy-tail__inner {
+    display: flex;
+    
+}
+.fairy-tail__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
-.fairy-tail {
-
+.fairy-tail__body {
+    padding-left: 55px;
+    width: 50%;
+    margin-left: auto;
 }
