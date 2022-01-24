@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="slick.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
-      <div class="container">
-          <div class="header__top">
-              <nav class="menu">
-                  <ul class="menu__list">
-                      <li class="menu__list-item">
-                          <a href="#" class="menu__list-link">Маршрут</a>
-                      </li>
-                      <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Отель</a>
-                      </li>
-                      <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Стоимость</a>
-                      </li>
-                  </ul>
-              </nav>
-              <a href="tel:+380665557776" class="header__phone">+38(066)555-777-6</a>
-          </div>
-          <h1 class="header__title">
-              Cappadocia
-              <span>Эксклюзивный тур</span>
-          </h1>
-      </div>  
+        <div class="container">
+            <div class="header__top">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Маршрут</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Отель</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Стоимость</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+380665557776" class="header__phone">+38(066)555-777-6</a>
+            </div>
+            <h1 class="header__title">
+                Cappadocia
+                <span>Эксклюзивный тур</span>
+            </h1>
+        </div>
     </header>
+    <section class="fairy-tail page-section">
+        <div class="container">
+            <h3 class="fairy-tail__title title">
+                Fairy tail
+                <span>Сказочная страна чудес</span>
+            </h3>
+        </div>
+        <div class="fairy-tail__inner">
+            <div class="fairy-tail__slider">
+                <div class="fairy-tail__item"><img src="images/fairy-tail-1.jpg" alt="slider_image"></div>
+                <div class="fairy-tail__item"><img src="images/fairy-tail-2.jpg" alt="slider_image"></div>
+                <div class="fairy-tail__item"><img src="images/fairy-tail-3.jpg" alt="slider_image"></div>
+                <button type="button" class="slider-btn previous" onclick="previousSlide()"><img src="images/arrow-prew.svg" alt="arrow prevous"></button>
+                <button type="button" class="slider-btn next" onclick="nextSlide()"><img src="images/arrow-next.svg" alt="arrow next"></button>
+              
+            </div>
+            <div class="fairy-tail__content">
+                <div class="fairy-tail__container">
+                    <div class="fairy-tail__body">
+                        <p class="fairy-tail__text">Каппадокия - сказочная страна воздушных шаров, сырных домиков,
+                            разноцветных долин и волшебных рассветов!
+                            Сюда приезжают, чтобы увидеть природные чудеса, полетать на воздушном шаре и конечно же
+                            сделать миллион красивых фотографий!
+                        </p>
+                        <p class="fairy-tail__text">Участников тура ждёт профессиональная фотосессия от лучших
+                            фотографов Каппадокии!
+                            Ведь именно за волшебными фото на рассвете на фоне воздушных шаров сюда приезжают люди со
+                            всего мира!
+                        </p>
+                        <div class="fary-tail__body-title">Также Вы увидите:</div>
+                        <ul class="fairy-tail__list">
+                            <li>Музей на открытом воздухе в Гёреме</li>
+                            <li>Ущелье Ыхлара и монастырь Селиме</li>
+                            <li>Подземные города</li>
+                            <li>Крепость Учхисар</li>
+                            <li>Зельве и Пашабаг</li>
+                        </ul>
+                        <p class="fairy-tail__text">и многие другие достпримечательности.</p>
+                        <p class="fairy-tail__text">Местная кухня — один из поводов посетить Каппадокию, здесь есть
+                            рестораны на любой бюджет.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
