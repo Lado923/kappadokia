@@ -64,3 +64,62 @@ button{
         opacity: 1
     }
 }
+
+
+.our-trip__slider{
+    /* Положение элемента устанавливается относительно его исходной позиции: */
+    position: relative;
+    /* Центрируем по горизонтали: */
+    width: 50%;
+    margin-left: auto;
+}
+
+.our-trip__slider-item img{
+    position: relative;
+    width: 100%;
+}
+
+/* Кнопки назад и вперёд: */
+.our-trip__slider .previous, .our-trip__slider .next {
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    margin-top: -35px;
+    /* Плавное появление фона при наведении курсора: */
+    transition: 0.6s ease;
+    /* Скругление границ: */
+    border-radius: 0 3px 3px 0;
+}
+.our-trip__slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider-btn {
+    border: none;
+    background: none;
+    height: 70px;
+    width: 70px;
+}
+
+button{
+    padding: 0px;
+}
+
+.slider-btn img{
+    height: 70px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.our-trip__slider .our-trip__slider-item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
