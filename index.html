@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="lightgalleryPlugin/css/lightgallery.min.css">
+	<link rel="stylesheet" href="lightgalleryPlugin/css/lg-transitions.min.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -159,26 +161,36 @@
                         Каппадокии. После ужина, пройдя на террасу, вы сможете заказать напиток и полюбоваться закатом
                         солнца над деревней.
                     </p>
-                    <div class="hotel__gallery">
-                        <a href="images/gallery/hotel-prev-1.jpg" class="hotel__gallery-img">
+                    <div class="hotel__gallery" id="lightgallery">
+                        <a href="images/gallery/hotel-prev-1.jpg" class="hotel__gallery-img" data-lg-size="1600-2400">
                             <img src="images/gallery/hotel-prev-1.jpg" alt="hotel-gallery-1">
                         </a>
-                        <a href="images/gallery/hotel-prev-2.jpg" class="hotel__gallery-img">
+                        <a href="images/gallery/hotel-prev-2.jpg" class="hotel__gallery-img" data-lg-size="1600-2400">
                             <img src="images/gallery/hotel-prev-2.jpg" alt="hotel-gallery-2">
                         </a>
-                        <a href="images/gallery/hotel-prev-3.jpg" class="hotel__gallery-img">
+                        <a href="images/gallery/hotel-prev-3.jpg" class="hotel__gallery-img" data-lg-size="1600-2400">
                             <img src="images/gallery/hotel-prev-3.jpg" alt="hotel-gallery-3">
                         </a>
-                        <a href="images/gallery/hotel-prev-4.jpg" class="hotel__gallery-img">
+                        <a href="images/gallery/hotel-prev-4.jpg" class="hotel__gallery-img" data-lg-size="1600-2400">
                             <img src="images/gallery/hotel-prev-4.jpg" alt="hotel-gallery-4">
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
+
 
     <script src="js/main.js"></script>
+    <script src="lightgalleryPlugin/js/lightgallery.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
+
+
+
 </body>
 
-</html>
+</html> 
