@@ -247,3 +247,35 @@ padding: 10px 0;
     padding-right: 55px;
     width: 50%;
 }
+
+.hotel__title span{
+    margin-left: 120px;
+}
+
+.hotel__inner {
+    display: flex;
+    padding: 0;
+}
+
+.hotel__images {
+    margin-right: 100px;
+}
+
+.hotel__text {
+margin-bottom: 20px;
+}
+
+.hotel__gallery {
+    margin-top:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 420px;
+    align-content: space-between;
+}
+.hotel__gallery a{
+   margin-top: 50px;
+   max-height: 150px;
+   max-width: 280px;
+}
+
