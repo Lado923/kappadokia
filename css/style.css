@@ -543,6 +543,9 @@ top: -5px;
         height: fit-content;
     }
 
+    .contacts__inner img{
+        width: 50%;
+    }
 }
 
 @media (max-width: 990px){
@@ -666,8 +669,34 @@ padding: 0;
 .price{
     background-position: center right -15%;
 }
+
+..contacts__date, .contacts__price {
+    font-size: 45px;
+    line-height: 80px;
 }
 
+.contacts__form-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.contacts__date span, .contacts__price span {
+    font-size: 20px;
+    line-height: 24px;
+}
+.contacts__form-input {
+    height: 30px;
+    padding: 0 15px;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.contacts__form-btn {
+    line-height: 24px;
+    font-size: 20px;
+    padding: 8px 30px;
+}
+}
 @media (max-width: 840px){
     .header__title {
         padding-top: 189px;
@@ -709,6 +738,10 @@ font-size: 70%;
     background-position: center right -20%;
 }
 
+
+.contacts__form {
+    min-width: 300px;
+}
 
 }
 
@@ -775,6 +808,18 @@ font-size: 70%;
 .price {
     background-position: center right -35%;
 }
+
+.contacts__inner {
+    flex-direction: column;
+}
+
+
+.contacts__inner img {
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 20px;
+    width: 100%;
+}
 }
 
 @media (max-width: 570px){
@@ -796,6 +841,8 @@ font-size: 70%;
 .price {
     background-position: center right -42%;
 }
+
+
 
 }
 
