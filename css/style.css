@@ -500,6 +500,12 @@ top: -5px;
     .our-trip__title {
         margin-bottom: 50px;
     }
+
+    .price{
+        background-image: url('../images/Group\ 1.png');
+        background-repeat: no-repeat;
+        background-position: center right -11%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -656,6 +662,10 @@ padding: 0;
     max-width: 200px;
     margin-left: 15px;
 }
+
+.price{
+    background-position: center right -15%;
+}
 }
 
 @media (max-width: 840px){
@@ -693,6 +703,10 @@ padding: 0;
 
 .hotel__content p{
 font-size: 70%;
+}
+
+.price {
+    background-position: center right -20%;
 }
 
 
@@ -758,7 +772,30 @@ font-size: 70%;
     line-height: 18px;
     margin-top: 10px;
 }
+.price {
+    background-position: center right -35%;
+}
+}
 
+@media (max-width: 570px){
+.title {
+    font-size: 70px;
+    line-height: 100px;
+    margin-bottom: 40px;
+}
+
+.title span {
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.hotel__title span {
+    margin-left: 89px;
+}
+
+.price {
+    background-position: center right -42%;
+}
 
 }
 
@@ -791,7 +828,21 @@ font-size: 70%;
         width: 40%;
         margin: 0 30%;
     }
-    
+
+    .price {
+        background-position: center right -55%;
+    }
+
+    .price__on-title, .price__off-title {
+        line-height: 18px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .price__list {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 
@@ -827,6 +878,14 @@ font-size: 70%;
     .our-trip__list {
         font-size: 11px;
         line-height: 12px;
+    }
+
+    .hotel__content p {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .hotel__gallery a {
+        max-width: 130px;
     }
 }
 
